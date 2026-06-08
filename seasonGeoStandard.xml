@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<SeasonGeo>
+
+	<cropsManagment>
+		<wheat>
+			<growth>
+				<seasonal initialState="harvestReady">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall2" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenMiddle" />
+					</period>
+				</seasonal>
+			</growth>
+		</wheat>
+		<barley>
+			<growth>
+				<seasonal>
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall2" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenMiddle" />
+					</period>
+				</seasonal>
+			</growth>
+		</barley>
+		<grass>
+			<growth>
+				<seasonal initialState="greenMiddle">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="harvestReady" />
+						<update startState="cut" endState="greenSmall" />
+						<update startState="cutRolled" endState="greenSmall" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="true" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="harvestReady" />
+						<update startState="cut" endState="greenSmall" />
+						<update startState="cutRolled" endState="greenSmall" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="true" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="harvestReady" />
+						<update startState="cut" endState="greenSmall" />
+						<update startState="cutRolled" endState="greenSmall" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="true" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="harvestReady" />
+						<update startState="cut" endState="greenSmall" />
+						<update startState="cutRolled" endState="greenSmall" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="true" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="harvestReady" />
+						<update startState="cut" endState="greenSmall" />
+						<update startState="cutRolled" endState="greenSmall" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="true" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="harvestReady" />
+						<update startState="cut" endState="greenSmall" />
+						<update startState="cutRolled" endState="greenSmall" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="harvestReady" />
+						<update startState="cut" endState="greenSmall" />
+						<update startState="cutRolled" endState="greenSmall" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="harvestReady" />
+						<update startState="cut" endState="greenSmall" />
+						<update startState="cutRolled" endState="greenSmall" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="harvestReady" endState="greenMiddle" /> <!-- knock back due to winter -->
+						<update startState="cut" endState="greenSmall" />
+						<update startState="cutRolled" endState="greenSmall" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="cut" endState="greenSmall" />
+						<update startState="cutRolled" endState="greenSmall" />
+					</period>
+				</seasonal>
+			</growth>
+		</grass>
+		<canola>
+			<growth>
+				<seasonal initialState="harvestReady">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall3" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenSmall3" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall2" endState="greenSmall3" />
+						<update startState="greenSmall3" endState="greenMiddle" />
+					</period>
+				</seasonal>
+			</growth>
+		</canola>
+		<oat>
+			<growth>
+				<seasonal initialState="harvestReady">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</oat>
+		<soybean>
+			<growth>
+				<seasonal initialState="greenMiddle2">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</soybean>
+		<sunflower>
+			<growth>
+				<seasonal initialState="greenMiddle2">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenMiddle" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall2" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</sunflower>
+		<beetroot>
+			<growth>
+				<seasonal initialState="greenBig">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</beetroot>
+		<carrot>
+			<growth>
+				<seasonal initialState="greenBig">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</carrot>
+		<cotton>
+			<growth>
+				<seasonal initialState="greenBig2">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenMiddle" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall2" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenMiddle3" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle2" endState="greenMiddle3" />
+						<update startState="greenMiddle3" endState="greenBig" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle3" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+				</seasonal>
+			</growth>
+		</cotton>
+		<greenbean>
+			<growth>
+				<seasonal initialState="greenBig">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</greenbean>
+		<maize>
+			<growth>
+				<seasonal initialState="greenBig">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReadyGreen" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="harvestReadyGreen" />
+						<update startState="harvestReadyGreen" endState="harvestReadyGreen2" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReadyGreen" endState="harvestReadyGreen2" />
+						<update startState="harvestReadyGreen2" endState="harvestReady3" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReadyGreen2" endState="harvestReady3" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady3" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</maize>
+		<oilseedradish>
+			<growth>
+				<seasonal initialState="greenSmall">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</oilseedradish>
+		<onion>
+			<growth>
+				<seasonal initialState="greenBig">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="dead" />
+						<update startState="greenMiddle" endState="dead" />
+						<update startState="greenMiddle2" endState="dead" />
+						<update startState="greenBig" endState="dead" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="dead" />
+						<update startState="greenMiddle" endState="dead" />
+						<update startState="greenMiddle2" endState="dead" />
+						<update startState="greenBig" endState="dead" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="dead" />
+						<update startState="greenMiddle" endState="dead" />
+						<update startState="greenMiddle2" endState="dead" />
+						<update startState="greenBig" endState="dead" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="dead" />
+						<update startState="greenMiddle" endState="dead" />
+						<update startState="greenMiddle2" endState="dead" />
+						<update startState="greenBig" endState="dead" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+				</seasonal>
+			</growth>
+		</onion>
+		<parsnip>
+			<growth>
+				<seasonal initialState="greenBig">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</parsnip>
+		<pea>
+			<growth>
+				<seasonal initialState="greenBig">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</pea>
+		<poplar>
+			<growth>
+				<seasonal initialState="greenMiddle2">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall4" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenMiddle3" />
+						<update startState="greenMiddle3" endState="greenMiddle4" />
+						<update startState="greenMiddle4" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="cut" endState="greenSmall" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenMiddle3" />
+						<update startState="greenMiddle3" endState="greenMiddle4" />
+						<update startState="greenMiddle4" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="greenBig3" />
+						<update startState="cut" endState="greenSmall" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenSmall3" />
+						<update startState="greenMiddle2" endState="greenMiddle3" />
+						<update startState="greenMiddle3" endState="greenMiddle4" />
+						<update startState="greenMiddle4" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="greenBig3" />
+						<update startState="greenBig3" endState="greenBig4" />
+						<update startState="cut" endState="greenSmall" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenSmall3" />
+						<update startState="greenSmall3" endState="greenSmall4" />
+						<update startState="greenMiddle3" endState="greenMiddle4" />
+						<update startState="greenMiddle4" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="greenBig3" />
+						<update startState="greenBig3" endState="greenBig4" />
+						<update startState="greenBig4" endState="harvestReady" />
+						<update startState="cut" endState="greenSmall" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenSmall3" />
+						<update startState="greenSmall3" endState="greenSmall4" />
+						<update startState="greenSmall4" endState="greenMiddle" />
+						<update startState="greenMiddle4" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="greenBig3" />
+						<update startState="greenBig3" endState="greenBig4" />
+						<update startState="greenBig4" endState="harvestReady" />
+						<update startState="cut" endState="greenSmall" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenSmall3" />
+						<update startState="greenSmall3" endState="greenSmall4" />
+						<update startState="greenSmall4" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="greenBig3" />
+						<update startState="greenBig3" endState="greenBig4" />
+						<update startState="greenBig4" endState="harvestReady" />
+						<update startState="cut" endState="greenSmall" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenSmall3" />
+						<update startState="greenSmall3" endState="greenSmall4" />
+						<update startState="greenSmall4" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenMiddle3" />
+						<update startState="greenBig2" endState="greenBig3" />
+						<update startState="greenBig3" endState="greenBig4" />
+						<update startState="greenBig4" endState="harvestReady" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall2" endState="greenSmall3" />
+						<update startState="greenSmall3" endState="greenSmall4" />
+						<update startState="greenSmall4" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenMiddle3" />
+						<update startState="greenMiddle3" endState="greenMiddle4" />
+						<update startState="greenBig3" endState="greenBig4" />
+						<update startState="greenBig4" endState="harvestReady" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig4" endState="harvestReady" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall3" endState="greenSmall4" />
+						<update startState="greenSmall4" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenMiddle3" />
+						<update startState="greenMiddle3" endState="greenMiddle4" />
+						<update startState="greenMiddle4" endState="greenBig" />
+					</period>
+				</seasonal>
+			</growth>
+		</poplar>
+		<potato>
+			<growth>
+				<seasonal initialState="greenBig">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenMiddle" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall2" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</potato>
+		<sorghum>
+			<growth>
+				<seasonal initialState="greenBig">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenMiddle" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenBig" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false"/>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</sorghum>
+		<spinach>
+			<growth>
+				<seasonal initialState="greenBigSecond">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenBig" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenBig" />
+						<update startState="greenBig" endState="harvestReady" />
+						<update startState="harvested" endState="greenMiddleSecond" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="harvestReady" />
+						<update startState="harvested" endState="greenMiddleSecond" />
+						<update startState="greenMiddleSecond" endState="greenBigSecond" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvested" endState="greenMiddleSecond" />
+						<update startState="greenMiddleSecond" endState="greenBigSecond" />
+						<update startState="greenBigSecond" endState="harvestReadySecond" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddleSecond" endState="greenBigSecond" />
+						<update startState="greenBigSecond" endState="harvestReadySecond" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBigSecond" endState="harvestReadySecond" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReadySecond" endState="dead" />
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</spinach>
+		<sugarbeet>
+			<growth>
+				<seasonal initialState="greenBig">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenMiddle" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall2" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</sugarbeet>
+		<sugarcane>
+			<growth>
+				<seasonal initialState="greenMiddle2">
+					<period name="EARLY_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="cut" endState="greenSmall" />
+					</period>
+					<period name="MID_SPRING" isHarvestable="false" plantingAllowed="true">
+						<update startState="invisible" endState="greenSmall" />
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="cut" endState="greenSmall" />
+					</period>
+					<period name="LATE_SPRING" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall" endState="greenSmall2" />
+						<update startState="greenSmall2" endState="greenMiddle" />
+					</period>
+					<period name="EARLY_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenSmall2" endState="greenMiddle" />
+						<update startState="greenMiddle" endState="greenMiddle2" />
+					</period>
+					<period name="MID_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle" endState="greenMiddle2" />
+						<update startState="greenMiddle2" endState="greenBig" />
+					</period>
+					<period name="LATE_SUMMER" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenMiddle2" endState="greenBig" />
+						<update startState="greenBig" endState="greenBig2" />
+					</period>
+					<period name="EARLY_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig" endState="greenBig2" />
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="MID_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="greenBig2" endState="harvestReady" />
+					</period>
+					<period name="LATE_AUTUMN" isHarvestable="false" plantingAllowed="false">
+						<update startState="harvestReady" endState="dead" />
+					</period>
+					<period name="EARLY_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="MID_WINTER" isHarvestable="false" plantingAllowed="false"/>
+					<period name="LATE_WINTER" isHarvestable="false" plantingAllowed="false"/>
+				</seasonal>
+			</growth>
+		</sugarcane>
+	</cropsManagment>
+
+	<weatherManagment> <!-- gestito dai cloud preset -->
+		<season name="spring">
+			<sun weight="18" probability="40">
+				<variation name="SUNNY_BLUE_SKY"      minHours="6"  maxHours="12" minTemp="14" maxTemp="18" probability="55"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_1" minHours="6"  maxHours="12" minTemp="12" maxTemp="17" probability="28"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_2" minHours="8"  maxHours="12" minTemp="11" maxTemp="16" probability="17"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_3" minHours="8"  maxHours="12" minTemp="10" maxTemp="15" probability="10"/>
+			</sun>
+			<cloudy weight="18" probability="50">
+				<variation name="CLOUDY_LIGHT"  minHours="5" maxHours="10" minTemp="11" maxTemp="16" probability="55"/>
+				<variation name="CLOUDY"        minHours="5" maxHours="10" minTemp="10" maxTemp="15" probability="28"/>
+				<variation name="CLOUDY_MEDIUM" minHours="5" maxHours="10" minTemp="9"  maxTemp="14" probability="17"/>
+				<variation name="CLOUDY_DENSE"  minHours="5" maxHours="10" minTemp="8"  maxTemp="13" probability="10"/>
+			</cloudy>
+			<rain weight="14" probability="7">
+				<variation name="RAIN_1" minHours="1" maxHours="3" minTemp="9"  maxTemp="15" probability="55"/>
+				<variation name="RAIN_2" minHours="1" maxHours="3" minTemp="8"  maxTemp="14" probability="28"/>
+				<variation name="RAIN_3" minHours="1" maxHours="3" minTemp="7"  maxTemp="13" probability="17"/>
+				<variation name="RAIN_4" minHours="1" maxHours="3" minTemp="6"  maxTemp="12" probability="10"/>
+			</rain>
+			<hail weight="5" probability="2">
+				<variation name="RAIN_1" minHours="1" maxHours="3" minTemp="9"  maxTemp="15" probability="55"/>
+				<variation name="RAIN_2" minHours="1" maxHours="3" minTemp="8"  maxTemp="14" probability="28"/>
+				<variation name="RAIN_3" minHours="1" maxHours="3" minTemp="7"  maxTemp="13" probability="17"/>
+				<variation name="RAIN_4" minHours="1" maxHours="3" minTemp="6"  maxTemp="12" probability="10"/>
+			</hail>
+			<twister weight="1" probability="1">
+				<variation name="TWISTER_1" minHours="3" maxHours="6" minTemp="6" maxTemp="13" probability="100"/>
+			</twister>
+			<fog>
+				<groundFog>
+					<coverageEdge0 min="0.05" max="0.4" />
+					<coverageEdge1 min="0.6" max="1" />
+					<extraHeight min="4" max="15" />
+					<groundLevelDensity min="0.05" max="0.25" />
+					<minValleyDepth min="3" max="8" />
+					<startDayTimeMinutes min="180" max="280" />
+					<endDayTimeMinutes min="480" max="600" />
+					<weatherTypes>
+						<weatherType name="RAIN" />
+						<weatherType name="CLOUDY" />
+					</weatherTypes>
+				</groundFog>
+				<heightFog>
+					<groundLevelDensity min="0.05" max="0.2" />
+					<maxHeight min="420" max="600" />
+				</heightFog>
+			</fog>
+		</season>
+		<season name="summer">
+			<sun weight="20" probability="75">
+				<variation name="SUNNY_BLUE_SKY"      minHours="6"  maxHours="12" minTemp="24" maxTemp="34" probability="55"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_1" minHours="6"  maxHours="12" minTemp="20" maxTemp="31" probability="28"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_2" minHours="8"  maxHours="12" minTemp="19" maxTemp="29" probability="17"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_3" minHours="8"  maxHours="12" minTemp="19" maxTemp="29" probability="10"/>
+			</sun>
+			<cloudy weight="16" probability="20">
+				<variation name="CLOUDY_LIGHT"  minHours="5" maxHours="10" minTemp="18" maxTemp="27" probability="55"/>
+				<variation name="CLOUDY"        minHours="5" maxHours="10" minTemp="17" maxTemp="26" probability="28"/>
+				<variation name="CLOUDY_MEDIUM" minHours="5" maxHours="10" minTemp="16" maxTemp="25" probability="17"/>
+				<variation name="CLOUDY_DENSE"  minHours="5" maxHours="10" minTemp="16" maxTemp="25" probability="10"/>
+			</cloudy>
+			<rain weight="12" probability="3">
+				<variation name="RAIN_1" minHours="1" maxHours="3" minTemp="15" maxTemp="24" probability="55"/>
+				<variation name="RAIN_2" minHours="1" maxHours="3" minTemp="15" maxTemp="24" probability="28"/>
+				<variation name="RAIN_3" minHours="1" maxHours="3" minTemp="14" maxTemp="23" probability="17"/>
+				<variation name="RAIN_4" minHours="1" maxHours="3" minTemp="13" maxTemp="22" probability="10"/>
+			</rain>
+			<hail weight="5" probability="1">
+				<variation name="RAIN_1" minHours="1" maxHours="3" minTemp="15" maxTemp="24" probability="55"/>
+				<variation name="RAIN_2" minHours="1" maxHours="3" minTemp="15" maxTemp="24" probability="28"/>
+				<variation name="RAIN_3" minHours="1" maxHours="3" minTemp="14" maxTemp="23" probability="17"/>
+				<variation name="RAIN_4" minHours="1" maxHours="3" minTemp="13" maxTemp="22" probability="10"/>
+			</hail>
+			<twister weight="1" probability="1">
+				<variation name="TWISTER_1" minHours="3" maxHours="6" minTemp="6" maxTemp="13" probability="100"/>
+			</twister>
+			<fog>
+				<groundFog>
+					<coverageEdge0 min="0.05" max="0.4" />
+					<coverageEdge1 min="0.6" max="1" />
+					<extraHeight min="4" max="15" />
+					<groundLevelDensity min="0.01" max="0.05" />
+					<minValleyDepth min="3" max="8" />
+					<startDayTimeMinutes min="180" max="280" />
+					<endDayTimeMinutes min="480" max="600" />
+					<weatherTypes>
+						<weatherType name="RAIN" />
+						<weatherType name="CLOUDY" />
+					</weatherTypes>
+				</groundFog>
+				<heightFog>
+					<groundLevelDensity min="0.05" max="0.2" />
+					<maxHeight min="420" max="600" />
+				</heightFog>
+			</fog>
+		</season>
+		<season name="autumn">
+			<sun weight="8" probability="30">
+				<variation name="SUNNY_BLUE_SKY"      minHours="6"  maxHours="12" minTemp="15" maxTemp="25" probability="55"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_1" minHours="6"  maxHours="12" minTemp="14" maxTemp="24" probability="28"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_2" minHours="8"  maxHours="12" minTemp="13" maxTemp="23" probability="17"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_3" minHours="8"  maxHours="12" minTemp="13" maxTemp="23" probability="10"/>
+			</sun>
+			<cloudy weight="10" probability="60">
+				<variation name="CLOUDY_LIGHT"  minHours="5" maxHours="10" minTemp="9"  maxTemp="20" probability="55"/>
+				<variation name="CLOUDY"        minHours="5" maxHours="10" minTemp="8"  maxTemp="19" probability="28"/>
+				<variation name="CLOUDY_MEDIUM" minHours="5" maxHours="10" minTemp="8"  maxTemp="20" probability="17"/>
+				<variation name="CLOUDY_DENSE"  minHours="5" maxHours="10" minTemp="7"  maxTemp="17" probability="10"/>
+			</cloudy>
+			<rain weight="6" probability="8">
+				<variation name="RAIN_1" minHours="1" maxHours="3" minTemp="7"  maxTemp="18" probability="55"/>
+				<variation name="RAIN_2" minHours="1" maxHours="3" minTemp="6"  maxTemp="15" probability="28"/>
+				<variation name="RAIN_3" minHours="1" maxHours="3" minTemp="6"  maxTemp="15" probability="17"/>
+				<variation name="RAIN_4" minHours="1" maxHours="3" minTemp="5"  maxTemp="14" probability="10"/>
+			</rain>
+			<hail weight="3" probability="1">
+				<variation name="RAIN_1" minHours="1" maxHours="3" minTemp="7"  maxTemp="18" probability="55"/>
+				<variation name="RAIN_2" minHours="1" maxHours="3" minTemp="6"  maxTemp="15" probability="28"/>
+				<variation name="RAIN_3" minHours="1" maxHours="3" minTemp="6"  maxTemp="15" probability="17"/>
+				<variation name="RAIN_4" minHours="1" maxHours="3" minTemp="5"  maxTemp="14" probability="10"/>
+			</hail>
+			<twister weight="1">
+				<variation name="TWISTER_1" minHours="3" maxHours="6" minTemp="6" maxTemp="13" probability="100"/>
+			</twister>
+			<fog>
+				<groundFog>
+					<coverageEdge0 min="0.05" max="0.4" />
+					<coverageEdge1 min="0.6" max="1" />
+					<extraHeight min="4" max="15" />
+					<groundLevelDensity min="0.05" max="0.25" />
+					<minValleyDepth min="3" max="8" />
+					<startDayTimeMinutes min="180" max="280" />
+					<endDayTimeMinutes min="480" max="600" />
+					<weatherTypes>
+						<weatherType name="RAIN" />
+						<weatherType name="CLOUDY" />
+					</weatherTypes>
+				</groundFog>
+				<heightFog>
+					<groundLevelDensity min="0.05" max="0.2" />
+					<maxHeight min="420" max="600" />
+				</heightFog>
+			</fog>
+		</season>
+		<season name="winter">
+			<sun weight="4" probability="20">
+				<variation name="SUNNY_BLUE_SKY"      minHours="6"  maxHours="12" minTemp="-6" maxTemp="10" probability="55"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_1" minHours="6"  maxHours="12" minTemp="-5" maxTemp="7"  probability="28"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_2" minHours="8"  maxHours="12" minTemp="-6" maxTemp="6"  probability="17"/>
+				<variation name="SUNNY_LIGHT_CLOUDS_3" minHours="8"  maxHours="12" minTemp="-5" maxTemp="5"  probability="10"/>
+			</sun>
+			<cloudy weight="7" probability="65">
+				<variation name="CLOUDY_LIGHT"  minHours="5" maxHours="10" minTemp="-6" maxTemp="7"  probability="55"/>
+				<variation name="CLOUDY"        minHours="5" maxHours="10" minTemp="-7" maxTemp="6"  probability="28"/>
+				<variation name="CLOUDY_MEDIUM" minHours="5" maxHours="10" minTemp="-8" maxTemp="6"  probability="17"/>
+				<variation name="CLOUDY_DENSE"  minHours="5" maxHours="10" minTemp="-9" maxTemp="5"  probability="10"/>
+			</cloudy>
+			<rain weight="5" probability="5">
+				<variation name="RAIN_1" minHours="1" maxHours="3" minTemp="-2" maxTemp="7"  probability="55"/>
+				<variation name="RAIN_2" minHours="1" maxHours="3" minTemp="-3" maxTemp="6"  probability="28"/>
+				<variation name="RAIN_3" minHours="1" maxHours="3" minTemp="-4" maxTemp="5"  probability="17"/>
+				<variation name="RAIN_4" minHours="1" maxHours="3" minTemp="-5" maxTemp="4"  probability="10"/>
+			</rain>
+			<snow weight="5" probability="5">
+				<variation name="RAIN_1" minHours="4" maxHours="8" minTemp="-8"  maxTemp="5"  probability="55"/>
+				<variation name="RAIN_2" minHours="4" maxHours="8" minTemp="-9"  maxTemp="4"  probability="28"/>
+				<variation name="RAIN_3" minHours="4" maxHours="8" minTemp="-10" maxTemp="3"  probability="17"/>
+				<variation name="RAIN_4" minHours="1" maxHours="3" minTemp="-11" maxTemp="2"  probability="10"/>
+			</snow>
+			<hail>
+				<variation name="RAIN_1" minHours="4" maxHours="16" minTemp="-5" maxTemp="5" probability="55"/>
+				<variation name="RAIN_2" minHours="6" maxHours="12" minTemp="-6" maxTemp="4" probability="28"/>
+				<variation name="RAIN_3" minHours="6" maxHours="12" minTemp="-7" maxTemp="3" probability="17"/>
+				<variation name="RAIN_4" minHours="2" maxHours="6"  minTemp="-8" maxTemp="2" probability="10"/>
+			</hail>
+			<twister>
+				<variation name="TWISTER_1" minHours="3" maxHours="6" minTemp="-5" maxTemp="5" probability="100"/>
+			</twister>
+			<fog>
+				<groundFog>
+					<coverageEdge0 min="0.05" max="0.4" />
+					<coverageEdge1 min="0.6" max="1" />
+					<extraHeight min="4" max="15" />
+					<groundLevelDensity min="0.01" max="0.05" />
+					<minValleyDepth min="3" max="8" />
+					<startDayTimeMinutes min="180" max="280" />
+					<endDayTimeMinutes min="480" max="600" />
+					<weatherTypes>
+						<weatherType name="RAIN" />
+						<weatherType name="CLOUDY" />
+					</weatherTypes>
+				</groundFog>
+				<heightFog>
+					<groundLevelDensity min="0.05" max="0.2" />
+					<maxHeight min="420" max="600" />
+				</heightFog>
+			</fog>
+		</season>
+	</weatherManagment>
+
+</SeasonGeo>
