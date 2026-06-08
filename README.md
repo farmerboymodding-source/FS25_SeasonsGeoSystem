@@ -58,7 +58,9 @@ To register a new regional climate configuration within the mod, simply declare 
 The main Lua module will automatically detect the active GEO mod, extract the path of the configured XML file, and execute the runtime optimization during map loading.
 
 👤 Credits & Contacts
+
 FarmerBoy
+
 If you need something please feel free to contact me on Instagram.
 
 Project released for the Farming Simulator 25 community. Redistributing the Lua source code without asking and crediting the original author is strictly prohibited.
