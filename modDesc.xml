@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>FarmerBoy</author>
+    <version>0.5.0.0</version>
+
+	<title>
+		<en>Seasons Geo System</en>
+	</title>
+	
+	<description>
+<en><![CDATA[
+
+]]></en>
+<de><![CDATA[
+
+]]></de>
+<it><![CDATA[
+
+]]></it>
+	</description>
+	
+    <iconFilename>icon.dds</iconFilename>
+    
+	<multiplayer supported="true"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/SeasonGeoMain.lua" />
+		<sourceFile filename="scripts/SeasonGeoCrops.lua" />	
+		<sourceFile filename="scripts/SeasonGeoFog.lua" />	
+		<sourceFile filename="scripts/SeasonGeoWeather.lua" />	
+    </extraSourceFiles>
+
+</modDesc>
